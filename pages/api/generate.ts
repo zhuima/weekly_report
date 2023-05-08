@@ -25,15 +25,15 @@ task5：依据九宫八卦和紫微斗数给出日常生活注意事项，要足
 
 将以上任务结果按以下Markdown格式排版输出：
 将以上任务结果按以下Markdown格式排版输出： 
-### 姓名释义 
+姓名释义 
 <task1 result> 
-### 今年运势 
+今年运势 
 <task2 result> 
-### 命理推算
+命理推算
 <task3 result> 
-### 改进建议
+改进建议
 <task4 result> 
-### 注意事项
+注意事项
 <task5 result> `
   prompt = p + prompt
   if (!prompt) {
