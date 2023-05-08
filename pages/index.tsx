@@ -46,7 +46,12 @@ const Home: NextPage = () => {
     }
 
     const myArray = chat.split(" ");
-    if (myArray[0].length > 4) {
+    const male = ["男", "女"];
+    if (
+      myArray[0].length > 4 ||
+      male.includes(myArray[1]) ||
+      myArray.length != 3
+    ) {
       toast.error(t("输入内容无效"));
       setLoading(false);
       return;
