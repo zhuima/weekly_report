@@ -35,19 +35,19 @@ const Home: NextPage = () => {
     setGeneratedChat("");
     setLoading(true);
     if (useUserKey && api_key == "") {
-      toast.error(t("API_KEY_NULL_ERROR"));
+      toast.error(t("API key不能为空"));
       setLoading(false);
       return;
     }
     if (chat == "") {
-      toast.error(t("CONTENT_NULL_ERROR"));
+      toast.error(t("内容不能为空"));
       setLoading(false);
       return;
     }
 
     const myArray = chat.split(" ");
     if (myArray[0].length > 4) {
-      toast.error(t("INVILID_CONTENT_ERROR"));
+      toast.error(t("输入内容无效"));
       setLoading(false);
       return;
     }
