@@ -46,7 +46,7 @@ const Home: NextPage = () => {
     }
 
     const myArray = chat.split(" ");
-    if (myArray[1].length > 4) {
+    if (myArray[0].length > 4) {
       toast.error(t("INVILID_CONTENT_ERROR"));
       setLoading(false);
       return;
