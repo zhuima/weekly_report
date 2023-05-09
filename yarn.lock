@@ -436,32 +436,6 @@
   resolved "https://mirrors.cloud.tencent.com/npm/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
-"@upstash/core-analytics@^0.0.6":
-  version "0.0.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@upstash/core-analytics/-/core-analytics-0.0.6.tgz#8680e7697e0f2660c2507bbc56348f5541bb0237"
-  integrity sha512-cpPSR0XJAJs4Ddz9nq3tINlPS5aLfWVCqhhtHnXt4p7qr5+/Znlt1Es736poB/9rnl1hAHrOsOvVj46NEXcVqA==
-  dependencies:
-    "@upstash/redis" "^1.19.3"
-
-"@upstash/ratelimit@^0.4.2":
-  version "0.4.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/@upstash/ratelimit/-/ratelimit-0.4.2.tgz#553000bb620b4b12ed741c0969970ce533b17877"
-  integrity sha512-nuuPK2IoPJywAK/8cosNiyM3vlcL6tFPaAwrLes0j2J5b1Hs/W7XDO72/AuC+K+dt89TP50WK9bvDFUwLRuhvw==
-  dependencies:
-    "@upstash/core-analytics" "^0.0.6"
-
-"@upstash/redis@^1.19.3":
-  version "1.20.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@upstash/redis/-/redis-1.20.6.tgz#3d5773f2b463b19f612b6373fe516e6200a1762d"
-  integrity sha512-q1izaYEUsq/WiXNOjf4oOjFZe8fIeBSZN8d5cEyOD4nem+zxc4jccieorQQrNlEahKPE1ZYLzVEkMODRUfch2g==
-  dependencies:
-    isomorphic-fetch "^3.0.0"
-
-"@vercel/analytics@^0.1.8":
-  version "0.1.11"
-  resolved "https://mirrors.cloud.tencent.com/npm/@vercel/analytics/-/analytics-0.1.11.tgz#727a0ac655a4a89104cdea3e6925476470299428"
-  integrity sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==
-
 antd@^5.4.7:
   version "5.4.7"
   resolved "https://mirrors.cloud.tencent.com/npm/antd/-/antd-5.4.7.tgz#8655f03fd7a3488f3d48327fe178e3d7e06a456d"
@@ -862,14 +836,6 @@ is-number@^7.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-isomorphic-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz#0267b005049046d2421207215d45d6a262b8b8b4"
-  integrity sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==
-  dependencies:
-    node-fetch "^2.6.1"
-    whatwg-fetch "^3.4.1"
-
 jiti@^1.18.2:
   version "1.18.2"
   resolved "https://mirrors.cloud.tencent.com/npm/jiti/-/jiti-1.18.2.tgz#80c3ef3d486ebf2450d9335122b32d121f2a83cd"
@@ -984,13 +950,6 @@ next@latest:
     "@next/swc-win32-arm64-msvc" "13.4.1"
     "@next/swc-win32-ia32-msvc" "13.4.1"
     "@next/swc-win32-x64-msvc" "13.4.1"
-
-node-fetch@^2.6.1:
-  version "2.6.10"
-  resolved "https://mirrors.cloud.tencent.com/npm/node-fetch/-/node-fetch-2.6.10.tgz#4a52b637a6802092aa11a3bf73d19aac789fdce1"
-  integrity sha512-5YytjUVbwzjE/BX4N62vnPPkGNxlJPwdA9/ArUc4pcM6cYS4Hinuv4VazzwjMGgnWuiQqcemOanib/5PpcsGug==
-  dependencies:
-    whatwg-url "^5.0.0"
 
 node-releases@^2.0.8:
   version "2.0.10"
@@ -1697,11 +1656,6 @@ toggle-selection@^1.0.6:
   resolved "https://mirrors.cloud.tencent.com/npm/toggle-selection/-/toggle-selection-1.0.6.tgz#6e45b1263f2017fa0acc7d89d78b15b8bf77da32"
   integrity sha1-bkWxJj8gF/oKzH2J14sVuL932jI=
 
-tr46@~0.0.3:
-  version "0.0.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
-  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
-
 ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://mirrors.cloud.tencent.com/npm/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
@@ -1737,24 +1691,6 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://mirrors.cloud.tencent.com/npm/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
-
-webidl-conversions@^3.0.0:
-  version "3.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
-  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
-
-whatwg-fetch@^3.4.1:
-  version "3.6.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
-  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
-
-whatwg-url@^5.0.0:
-  version "5.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
-  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
-  dependencies:
-    tr46 "~0.0.3"
-    webidl-conversions "^3.0.0"
 
 wrappy@1:
   version "1.0.2"
