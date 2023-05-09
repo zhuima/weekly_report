@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
   const [generatedChat, setGeneratedChat] = useState<String>("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isPayModalOpen, setIsPayModalOpen] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -48,6 +50,18 @@ const Home: NextPage = () => {
 
   const handlePayCancel = () => {
     setIsPayModalOpen(false);
+  };
+
+  const showPrivacyModal = () => {
+    setIsPrivacyModalOpen(true);
+  };
+
+  const handlePrivacyOk = () => {
+    setIsPrivacyModalOpen(false);
+  };
+
+  const handlePrivacyCancel = () => {
+    setIsPrivacyModalOpen(false);
   };
 
   console.log("Streamed response: ", generatedChat);
@@ -164,6 +178,29 @@ const Home: NextPage = () => {
         <img src="/wechatpay.jpeg" width={240} />
       </Modal>
 
+      <Modal
+        title="隐私声明"
+        className="text-center flex justify-center items-center mt-20"
+        open={isPrivacyModalOpen}
+        onOk={handlePrivacyOk}
+        onCancel={handlePrivacyCancel}
+        footer={[]}
+      >
+        <p>
+          我们重视您的隐私。该网站不存储您上传的任何内容。所有内容将被直接上传到
+          OpenAI，OpenAI
+          将承担所有与该内容相关的责任。该网站不对任何与上传内容有关的法律责任负责。请确保您了解
+          <Link
+            href="https://openai.com/policies/privacy-policy"
+            className="text-blue-200 hover:text-blue-400"
+          >
+            {" "}
+            OpenAI 的隐私政策{" "}
+          </Link>
+          ，并同意其所涵盖的内容。
+        </p>
+      </Modal>
+
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           {t("description1")} <br></br>
@@ -238,15 +275,14 @@ const Home: NextPage = () => {
           <div className="mt-1 items-center space-x-3">
             <span className="text-slate-200">
               {t("privacyPolicy1")}
-              <a
+              <Link
+                href=""
                 className="text-blue-200 hover:text-blue-400"
-                href="https://github.com/guaguaguaxia/weekly_report/blob/main/privacy.md"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={showPrivacyModal}
               >
                 {" "}
                 {t("privacyPolicy2")}
-              </a>
+              </Link>
             </span>
             <br></br>
 

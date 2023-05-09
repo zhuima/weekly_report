@@ -15,7 +15,7 @@
     "simplifierButton": "解签",
     "simplifiedContent": "今年运势预测",
     "privacyPolicy1": "请勿太过于相信预测报告中的的内容，如有问题请找专业人员咨询",
-    "privacyPolicy2": "",
+    "privacyPolicy2": "《隐私声明》",
     "paragraphForm": "段落",
     "paragraphFormPrompt": "请总结<|start|>与<|end|>之间的聊天内容。要求简明扼要，以一段话的形式输出。\n\n<|start|>",
     "prompt": "",
