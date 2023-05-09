@@ -13,6 +13,7 @@ import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import ResizablePanel from "../components/ResizablePanel";
 import { marked } from "marked";
+import { Button, Modal } from "antd";
 
 const Home: NextPage = () => {
   const t = useTranslations("Index");
@@ -22,6 +23,32 @@ const Home: NextPage = () => {
   const [form, setForm] = useState<FormType>("paragraphForm");
   const [api_key, setAPIKey] = useState("");
   const [generatedChat, setGeneratedChat] = useState<String>("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPayModalOpen, setIsPayModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const showPayModal = () => {
+    setIsPayModalOpen(true);
+  };
+
+  const handlePayOk = () => {
+    setIsPayModalOpen(false);
+  };
+
+  const handlePayCancel = () => {
+    setIsPayModalOpen(false);
+  };
 
   console.log("Streamed response: ", generatedChat);
 
@@ -49,7 +76,7 @@ const Home: NextPage = () => {
     const male = ["男", "女"];
     if (
       myArray[0].length > 4 ||
-      male.includes(myArray[1]) ||
+      !male.includes(myArray[1]) ||
       myArray.length != 3
     ) {
       toast.error(t("输入内容无效"));
@@ -113,7 +140,30 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header showModal={showModal} />
+
+      <Modal
+        title="加个好友，了解更多"
+        className="text-center flex justify-center items-center mt-20"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={[]}
+      >
+        <img src="/chatme.jpeg" width={220} />
+      </Modal>
+
+      <Modal
+        title="谢谢你的咖啡"
+        className="text-center flex justify-center items-center mt-20"
+        open={isPayModalOpen}
+        onOk={handlePayOk}
+        onCancel={handlePayCancel}
+        footer={[]}
+      >
+        <img src="/wechatpay.jpeg" width={240} />
+      </Modal>
+
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           {t("description1")} <br></br>
@@ -248,6 +298,39 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
+      <div
+        className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md w-full"
+        role="alert"
+      >
+        <div className="flex justify-between items-center w-full ">
+          <div className="flex py-1">
+            <Image
+              alt="1 icon"
+              src="/coffee.svg"
+              width="40"
+              height="30"
+              decoding="async"
+              data-nimg="1"
+              className="mb-5 xs:mb-0 text-right mr-5"
+              loading="lazy"
+            />
+            <div>
+              <p className="font-bold">如果您愿意赞助一杯咖啡</p>
+              <p className="text-sm">
+                您的赞助将使我能够持续维护该网站，让您的体验更加舒适和满意。感谢您的支持！
+              </p>
+            </div>
+          </div>
+
+          <button
+            className="bg-cyan-500 hover:bg-cyan-600 rounded-xl text-white font-medium px-2 py-1  items-center "
+            onClick={showPayModal}
+          >
+            赞赏
+          </button>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
