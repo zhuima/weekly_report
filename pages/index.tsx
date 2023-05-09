@@ -164,7 +164,7 @@ const Home: NextPage = () => {
         onCancel={handleCancel}
         footer={[]}
       >
-        <Image src="/chatme.jpeg" width={220} />
+        <Image src="/chatme.jpeg" width={220} alt="" />
       </Modal>
 
       <Modal
@@ -175,7 +175,7 @@ const Home: NextPage = () => {
         onCancel={handlePayCancel}
         footer={[]}
       >
-        <Image src="/wechatpay.jpeg" width={240} />
+        <Image src="/wechatpay.jpeg" width={240} alt="" />
       </Modal>
 
       <Modal
