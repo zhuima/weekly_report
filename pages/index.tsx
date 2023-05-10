@@ -164,7 +164,7 @@ const Home: NextPage = () => {
         onCancel={handleCancel}
         footer={[]}
       >
-        <Image src="/chatme.jpeg" width={220} alt="" />
+        <Image src="/chatme.jpeg" width={220} alt="" loading="lazy" />
       </Modal>
 
       <Modal
@@ -175,7 +175,7 @@ const Home: NextPage = () => {
         onCancel={handlePayCancel}
         footer={[]}
       >
-        <Image src="/wechatpay.jpeg" width={240} alt="" />
+        <Image src="/wechatpay.jpeg" width={240} alt="" loading="lazy" />
       </Modal>
 
       <Modal
@@ -242,6 +242,7 @@ const Home: NextPage = () => {
               height={30}
               alt="1 icon"
               className="mb-5 xs:mb-0"
+              loading="lazy"
             />
             <p className="text-left font-medium">{t("step1")} </p>
           </div>
