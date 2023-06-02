@@ -4,7 +4,6 @@ import { NextIntlProvider } from "next-intl";
 import { useState } from "react";
 import { Modal } from "antd";
 
-import NoticeModal from "../components/NoticeModal";
 import "../styles/globals.css";
 import "../styles/markdown.css";
 
