@@ -7,20 +7,20 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
-            name="description"
-            content="Simplify your chat content in seconds."
+            name="上上签"
+            content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
           />
           <meta property="og:site_name" content="Chat Simplifier" />
           <meta
-            property="og:description"
-            content="Simplify your chat content in seconds."
+            property="og:上上签"
+            content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
           />
           <meta property="og:title" content="Chat Simplifier" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Chat Simplifier" />
           <meta
-            name="twitter:description"
-            content="Simplify your chat content in seconds."
+            name="twitter:上上签"
+            content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
           />
           <meta
             property="og:image"
