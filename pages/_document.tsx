@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.svg" />
           <meta
             name="上上签"
             content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
@@ -15,9 +15,18 @@ class MyDocument extends Document {
             property="og:上上签"
             content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
           />
-          <meta property="og:title" content="Chat Simplifier" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Chat Simplifier" />
+          <meta
+            property="og:title"
+            content="上上签,一键解读你今年运势，运势，风水，八卦，阴阳，算命."
+          />
+          <meta
+            name="twitter:card"
+            content="上上签,一键解读你今年运势，运势，风水，八卦，阴阳，算命."
+          />
+          <meta
+            name="twitter:title"
+            content="上上签,一键解读你今年运势，运势，风水，八卦，阴阳，算命."
+          />
           <meta
             name="twitter:上上签"
             content="一键解读你今年运势，运势，风水，八卦，阴阳，算命."
