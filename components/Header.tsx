@@ -15,7 +15,7 @@ export default function Header(props) {
         href="/"
         className="flex space-x-3 align-center  text-center items-center "
       >
-        <Image alt="header text" src="/logo.png" width={50} height={50} />
+        <Image alt="header text" src="/logo.png" width={68} height={50} />
         <h1 className="sm:text-4xl text-2xl font-bold ml-2 tracking-tight text-center">
           {t("title")}
         </h1>
